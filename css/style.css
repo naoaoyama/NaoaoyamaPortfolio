@@ -1,0 +1,687 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amiri', 'Noto Serif JP', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  background-color: rgb(241, 228, 213);
+}
+
+main {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* ########################## */
+/* mobileversion */
+/* ########################## */
+
+@media (min-width:300px){
+
+  h2 {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+
+p {
+    line-height: 2;
+    font-size: 12px;
+  }
+
+/* nav */
+nav > ul {
+  display: none;
+}
+nav aside {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  column-gap: 3vh;
+  
+}
+
+details {
+  position: absolute;
+  padding-right: 5%;
+  width: 95%;
+  text-align: right;
+}
+details ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* background-color: rgb(241, 228, 213); */
+  /* font-size: 40px; */
+}
+details li {
+  display: flex;
+  padding-right: 3%;
+}
+details a {
+  color: white;
+  padding: 3%;
+  width: 100%;
+}
+
+summary {
+  font-size: 20px;
+  padding-top: 3vh;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-around;
+}
+
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+nav > aside a {
+  font-size: 15px;
+}
+
+/* header */
+header {
+  /* background-image: url(../img/wallpaper00.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height:69vh; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-attachment: fixed; */
+}
+
+
+body:before{
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/Free\ Phone\ Wallpapers\ _\ June\ &\ July\ -\ Corrie\ Bromfield.png") center no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header > h1{
+  font-size: 30px;
+  font-weight: 100;
+  color: darkgray;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  padding: 4%;
+  text-align: center;
+  color: lightslategray;
+}
+
+
+/* about */
+.about {
+  text-align: center;
+  padding: 5vh 3vh;
+  row-gap: 3vh;
+  z-index: 1;
+  background-color: rgb(241, 228, 213);
+}
+
+.about img {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 30%;
+}
+
+.about > aside{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 3vh;
+}
+
+
+/* img */
+/* .img { */
+  /* background-image: url(../img/wallpaper00.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover; */
+  /* height: 40vh; */
+  /* background-attachment: fixed; */
+/* } */
+
+/* skill */
+.skill {
+  height: 40vh;
+  /* background-color: rgb(241, 228, 213); */
+}
+
+.skill > article {
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5vh;
+}
+
+.skill section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill aside {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4vh;
+  justify-content: center;
+  row-gap: 2vh;
+}
+
+.skill figure {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+  align-items: center;
+}
+
+.skill img {
+  width: 6vh;
+  height: 6vh;
+}
+
+.skill figcaption {
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* education */
+
+.education {
+  background-color: rgb(99, 97, 97);
+  color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+  padding-left: 3vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.education > section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+}
+
+.education li {
+  list-style: none;
+  font-size: 12px;
+}
+
+
+/* previous work */
+.work {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  align-items: center;
+}
+
+.work img {
+  width: 30vh;
+  height: 20vh;
+  padding-top: 3vh;
+}
+
+.work figcaption > a{
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+  font-size: 12px;
+}
+
+.work figcaption > a:hover {
+  color: ghostwhite;
+}
+
+/* service */
+/* .service {
+  background-image: url(../img/wallpaper00.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height:70vh;
+  background-attachment: fixed;
+} */
+
+.service > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  height: 64vh; 
+  background-color: rgba(78, 75, 75, 0.5);
+}
+
+.service section {
+  text-align: center;
+}
+
+.service aside {
+  padding-top: 3vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+}
+
+.service h2,
+.service h3,
+.service p {
+  color: ghostwhite;
+}
+
+/* contact */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  background-color: rgb(241, 228, 213);
+}
+
+.contact section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+  width: 93%;
+}
+
+.contact aside {
+  display: flex;
+  align-items: center;
+  column-gap: 5vh;
+}
+
+.contact button {
+  padding: 1%;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact ul {
+  line-height: 2;
+}
+
+.contact li {
+  list-style: none;
+  font-size: 12px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+button {
+  background-color: black;
+  width: 60%;
+  height: 30%;
+}
+.contact button > a {
+  color: ghostwhite;
+}
+}
+
+/* ######################### */
+/* tabletversion */
+/* ######################### */
+
+@media (min-width:600px){
+
+  h2 {
+    font-size: 35px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+/* nav */
+  summary {
+    font-size: 25px;
+  }
+
+  details li a {
+    font-size: 15px;
+  }
+
+  nav > aside {
+    column-gap: 5vh;
+  }
+
+  nav > aside a {
+    font-size: 20px;
+  }
+
+  header > h1{
+    font-size: 45px;
+  }
+
+  /* about */
+  .about {
+    display: flex;
+    align-items: center;
+    column-gap: 3vh;
+  }
+
+  /* skill */
+.skill > article {
+  row-gap: 3vh;
+}
+
+ .skill aside {
+  width: 80%;
+ } 
+
+ .skill img {
+  width: 8vh;
+  height: 8vh;
+}
+
+.skill figcaption {
+  font-size: 12px;
+}
+
+/* education */
+.education li {
+  font-size: 15px;
+}
+
+/* previous work */
+.work article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 3vh;
+}
+
+.work img {
+  width: 28vh;
+  height: 18vh;
+}
+
+.work figcaption > a{
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+  font-size: 12px;
+}
+
+/* service */
+.service {
+  height:53vh;
+}
+
+.service > article {
+  height: 47vh; 
+}
+
+/* contact */
+
+.contact aside {
+  justify-content: center;
+}
+.contact li {
+  font-size: 15px;
+}
+
+.contact li > a {
+  font-size: 15px;
+}
+
+.contact button {
+  width: 13vh;
+  height: 3vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+/* ############# */
+/* desktopversion */
+/* ############## */
+
+@media (min-width:1000px){
+
+  h2 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 23px;
+  }
+
+p {
+    font-size: 17px;
+  }
+
+  /* nav */
+  nav {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+  }
+  
+  nav > ul,
+  nav > aside {
+    display: flex;
+    column-gap: 5vh; 
+    align-items: center;
+  }
+  
+  nav li {
+    list-style: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    transition: .4s;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  
+  nav a:hover {
+    color: lightslategray;
+  }
+  
+  nav > aside a {
+    font-size: 20px;
+  }
+
+  nav details {
+    display: none;
+  }
+  header {
+    height: 90vh;
+    background-position: 25% 65%;
+  }
+
+  header > h1 {
+    font-size: 70px;
+  }
+
+  /* about */
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10vh;
+    padding: 10vh 20vh 10vh 20vh;
+  }
+  
+  .about img {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 30%;
+  }
+  .about aside {
+    width: 50%;
+  }
+
+  /* skill */
+  .skill {
+    height: 68vh;
+  }
+
+  .skill > article {
+    row-gap: 5vh;
+  }
+
+  .skill figure {
+    width: 20%;
+  }
+  
+  .skill img {
+    width: 15vh;
+    height: 15vh;
+  }
+  
+  .skill figcaption {
+    font-size: 16px;
+  }
+
+  /* education */
+
+  .education {
+    padding-left: 10vh;
+  }
+  .education li {
+    font-size: 17px;
+  }
+
+  /* previous work */
+
+  .work article {
+    display: flex;
+    width: 83%;
+    column-gap: 10vh;
+  }
+  .work img {
+    width: 40vh;
+    height: 30vh;
+  }
+
+  .work img:hover {
+    opacity:0.5;
+    transition:0.3s;
+  }
+  
+  .work figcaption > a{
+    text-decoration: none;
+    color: black;
+    transition: .4s;
+    font-size: 15px;
+  }
+  
+  .work figcaption > a:hover {
+    color: ghostwhite;
+  }
+
+  /* service */
+  .service {
+    height: 65vh;
+}
+
+  .service > article {
+    height: 59vh;
+  }
+
+  .service section {
+    display: flex;
+    width: 85%;
+    column-gap: 5vh;
+  }
+  
+  .service aside {
+    width: 50%;
+  }
+
+  /* contact */
+  
+  .contact a:hover {
+    color: ghostwhite;
+  }
+  
+  .contact button {
+    width: 15%;
+    height: 30%;
+  }
+  .contact button > a {
+    color: ghostwhite;
+    font-size: 15px;
+  }
+  
+  .contact li,
+  .contact li > a{
+    font-size: 17px;
+  }
+}
