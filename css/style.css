@@ -156,7 +156,7 @@ footer {
 /* about */
 .about {
   text-align: center;
-  padding: 5vh 3vh;
+  padding: 10vh 3vh;
   row-gap: 3vh;
   z-index: 1;
   background-color: rgb(241, 228, 213);
@@ -189,11 +189,12 @@ footer {
 /* skill */
 .skill {
   height: 40vh;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
   /* background-color: rgb(241, 228, 213); */
 }
 
 .skill > article {
-  padding: 3vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,9 +211,10 @@ footer {
 .skill aside {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 4vh;
+  column-gap: 8vh;
   justify-content: center;
   row-gap: 2vh;
+  width: 80%;
 }
 
 .skill figure {
@@ -241,9 +243,9 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: 3vh;
-  padding-left: 3vh;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding-left: 6vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .education > section {
@@ -263,8 +265,8 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: 3vh;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   align-items: center;
 }
 
@@ -300,8 +302,7 @@ footer {
   flex-direction: column;
   align-items: center;
   row-gap: 3vh;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding-top: 10vh;
   padding-left: 3vh;
   padding-right: 3vh;
   height: 64vh; 
@@ -318,6 +319,7 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: 2vh;
+  align-items: center;
 }
 
 .service h2,
@@ -326,13 +328,18 @@ footer {
   color: ghostwhite;
 }
 
+.service p {
+  width: 80%;
+}
+
+
 /* contact */
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   background-color: rgb(241, 228, 213);
 }
 
@@ -340,7 +347,7 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: 2vh;
-  width: 93%;
+  width: 80%;
 }
 
 .contact aside {
@@ -435,6 +442,7 @@ button {
 
  .skill aside {
   width: 80%;
+  column-gap: 12vh;
  } 
 
  .skill img {
@@ -447,6 +455,11 @@ button {
 }
 
 /* education */
+
+.education {
+  padding-left: 8vh;
+}
+
 .education li {
   font-size: 15px;
 }
@@ -474,16 +487,18 @@ button {
 /* service */
 .service {
   height:53vh;
+  padding-bottom: 10vh;
 }
 
 .service > article {
-  height: 47vh; 
+  height: 53vh; 
 }
 
 /* contact */
 
 .contact aside {
   justify-content: center;
+  width: 95%;
 }
 .contact li {
   font-size: 15px;
@@ -612,7 +627,7 @@ p {
   /* education */
 
   .education {
-    padding-left: 10vh;
+    padding-left: 20vh;
   }
   .education li {
     font-size: 17px;
@@ -652,7 +667,8 @@ p {
 }
 
   .service > article {
-    height: 59vh;
+    height: 65vh;
+    row-gap: 8vh;
   }
 
   .service section {
