@@ -124,27 +124,27 @@
       <h2>Previous Work</h2>
       <article>
         <figure>
-          <a href="http://www.lula-shop.com/"><img src="./img/lulashop.jpg" alt="lulashop"></a>
+          <a href="http://www.lula-shop.com/"><img class="img-item" src="./img/lulashop.jpg" alt="lulashop"></a>
           <figcaption><a href="http://www.lula-shop.com/">2013-2022. Online store</a></figcaption>
         </figure>
         <figure>
-          <a href="https://naoaoyama.github.io/Weddingsite/"><img src="./img/wedding.png" alt="weddingsite"></a>
+          <a href="https://naoaoyama.github.io/Weddingsite/"><img class="img-item" src="./img/wedding.png" alt="weddingsite"></a>
           <figcaption><a href="https://naoaoyama.github.io/Weddingsite/">2023. Wedding sample website</a></figcaption>
         </figure>
         <figure>
-          <a href="https://naoaoyama.github.io/restaurantwebsite/"><img src="./img/restaurant.png" alt="liquorstore"></a>
+          <a href="https://naoaoyama.github.io/restaurantwebsite/"><img class="img-item" src="./img/restaurant.png" alt="liquorstore"></a>
           <figcaption><a href="https://naoaoyama.github.io/restaurantwebsite/">2023. Restaurant sample website</a></figcaption>
         </figure>
         <figure>
-          <a href="https://naoaoyama.github.io/Udonorganization/"><img src="./img/Udon.png" alt="sample"></a>
+          <a href="https://naoaoyama.github.io/Udonorganization/"><img class="img-item" src="./img/Udon.png" alt="sample"></a>
           <figcaption><a href="https://naoaoyama.github.io/Udonorganization/">2023. Organization Sample website</a></figcaption>
         </figure>
         <figure>
-          <a href="https://naoaoyama.github.io/flowershopwebsite/index.html"><img src="./img/flowershop01.png" alt="Flowershop"></a>
+          <a href="https://naoaoyama.github.io/flowershopwebsite/index.html"><img class="img-item" src="./img/flowershop01.png" alt="Flowershop"></a>
           <figcaption><a href="https://naoaoyama.github.io/flowershopwebsite/index.html">2023. Flower shop sample website</a></figcaption>
         </figure>
         <figure>
-          <a href="https://naoaoyama.github.io/Tsunagu/"><img src="./img/Tsunagu.png" alt="corporate website"></a>
+          <a href="https://naoaoyama.github.io/Tsunagu/"><img class="img-item" src="./img/Tsunagu.png" alt="corporate website"></a>
           <figcaption><a href="https://naoaoyama.github.io/Tsunagu/">2023. Corporate website</a></figcaption>
         </figure>
       </article>
@@ -206,6 +206,32 @@ ScrollReveal().reveal('.text4', {
   reset: true   
 });
     
-    </script>    
+    </script>
+    <script>
+      const items = document.querySelectorAll(".img-item");
+    console.log(items);
+    
+    
+    
+    const showImg = (e)=>{
+      for(let i = 0; i < items.length; i++){
+        const keyframes = {
+          opacity: [0,1],
+          rotate: ['5deg', 0],
+          scale: [1.1, 1],
+        }
+        const options = {
+          duration: 600,
+          delay: i * 300,
+          fill: 'forwards',
+        };
+        items[i].animate(keyframes, options);
+      }
+    };
+    
+    const itemObserver = new IntersectionObserver(showImg);
+    
+    itemObserver.observe(document.querySelector(".work"));
+    </script>  
 </body>
 </html>
