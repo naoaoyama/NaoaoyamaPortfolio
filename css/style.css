@@ -643,6 +643,7 @@ p {
   .work img {
     width: 40vh;
     height: 30vh;
+    object-fit: cover;
   }
 
   .work img:hover {
