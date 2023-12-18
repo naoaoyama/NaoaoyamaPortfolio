@@ -135,7 +135,7 @@
       </article>
       <article class="work" id="work">
         <h2>Previous Work</h2>
-        <article>
+        <article class="text6">
           <figure>
             <a href="https://naoaoyama.github.io/restaurantwebsite/"
               ><img
@@ -266,30 +266,12 @@
         distance: "200px",
         reset: true,
       });
-    </script>
-    <script>
-      const items = document.querySelectorAll(".img-item");
-      console.log(items);
-
-      const showImg = (e) => {
-        for (let i = 0; i < items.length; i++) {
-          const keyframes = {
-            opacity: [0, 1],
-            rotate: ["5deg", 0],
-            scale: [1.1, 1],
-          };
-          const options = {
-            duration: 600,
-            delay: i * 300,
-            fill: "forwards",
-          };
-          items[i].animate(keyframes, options);
-        }
-      };
-
-      const itemObserver = new IntersectionObserver(showImg);
-
-      itemObserver.observe(document.querySelector(".work"));
+      ScrollReveal().reveal(".text6", {
+        duration: 3000,
+        origin: "bottom",
+        distance: "200px",
+        reset: true,
+      });
     </script>
   </body>
 </html>
