@@ -164,8 +164,10 @@ footer {
 
 .about img {
   width: 25vh;
-  height: 25vh;
-  border-radius: 30%;
+  height: 30vh;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  object-fit: cover;
 }
 
 .about > aside{
@@ -435,6 +437,11 @@ button {
     column-gap: 3vh;
   }
 
+  .about img {
+    width: 25vh;
+    height: 30vh;
+  }
+
   /* skill */
 .skill > article {
   row-gap: 3vh;
@@ -594,9 +601,10 @@ p {
   }
   
   .about img {
-    width: 50vh;
+    width: 45vh;
     height: 50vh;
-    border-radius: 30%;
+    border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
   }
   .about aside {
     width: 50%;
