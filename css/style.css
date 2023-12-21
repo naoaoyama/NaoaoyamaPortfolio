@@ -580,12 +580,13 @@ p {
   }
   
   nav > aside a {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   nav details {
     display: none;
   }
+  
   header {
     height: 90vh;
     background-position: 25% 65%;
