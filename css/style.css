@@ -155,13 +155,20 @@ footer {
 
 /* about */
 .about {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  padding: 10vh 3vh;
-  row-gap: 3vh;
   z-index: 1;
   background-color: rgb(241, 228, 213);
 }
-
+.about-wrapper{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+}
 .about img {
   width: 25vh;
   height: 30vh;
@@ -170,7 +177,7 @@ footer {
   object-fit: cover;
 }
 
-.about > aside{
+.about-wrapper > aside{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,9 +185,9 @@ footer {
   row-gap: 3vh;
 }
 
-.about p{
+/* .about-wrapper p{
   width: 90%;
-}
+} */
 
 
 /* img */
@@ -195,33 +202,27 @@ footer {
 
 /* skill */
 .skill {
+  display: flex;
+  justify-content: center;
   height: 40vh;
   padding-top: 10vh;
   padding-bottom: 5vh;
-  /* background-color: rgb(241, 228, 213); */
 }
-
-.skill > article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.skill-wrapper{
   row-gap: 5vh;
-}
-
-.skill section {
+  width: 85%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.skill aside {
+
+.skill-wrapper aside {
   display: flex;
+  column-gap: 5vh;
   flex-wrap: wrap;
-  column-gap: 8vh;
-  justify-content: center;
-  row-gap: 2vh;
-  width: 80%;
+  row-gap: 3vh;
+  justify-content: space-between;
 }
 
 .skill figure {
@@ -232,8 +233,8 @@ footer {
 }
 
 .skill img {
-  width: 6vh;
-  height: 6vh;
+  width: 8vh;
+  height: 8vh;
 }
 
 .skill figcaption {
@@ -243,14 +244,17 @@ footer {
 }
 
 /* education */
-
-.education {
+.education{
   background-color: rgb(99, 97, 97);
+  display: flex;
+  justify-content: center;
+}
+.education-wrapper {
   color: ghostwhite;
   display: flex;
   flex-direction: column;
-  row-gap: 3vh;
-  padding-left: 6vh;
+  row-gap: 5vh;
+  width: 85%;
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
@@ -273,15 +277,15 @@ footer {
   flex-direction: column;
   row-gap: 5vh;
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 20vh;
   text-align: center;
   /* align-items: center; */
 }
 
 .work img {
   /* width: 100%; */
-  width: 40vh;
-  height: 40vh;
+  width: 30vh;
+  height: 30vh;
   object-fit: cover;
 }
 
@@ -305,17 +309,19 @@ footer {
   height:70vh;
   background-attachment: fixed;
 } */
-
-.service > article {
+.service{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(78, 75, 75, 0.5);
+}
+.service-wrapper {
+  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 3vh;
+  row-gap: 5vh;
   padding-top: 10vh;
-  padding-left: 3vh;
-  padding-right: 3vh;
   height: 64vh; 
-  background-color: rgba(78, 75, 75, 0.5);
 }
 
 .service section {
@@ -337,30 +343,29 @@ footer {
   color: ghostwhite;
 }
 
-.service p {
-  width: 80%;
-}
 
 
 /* contact */
+
 .contact {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
   background-color: rgb(241, 228, 213);
 }
-
-.contact section {
+.contact-wrapper {
+  width: 85%;
   display: flex;
   flex-direction: column;
-  row-gap: 2vh;
-  width: 80%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  row-gap: 5vh;
 }
 
-.contact aside {
+
+
+.contact-wrapper aside {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   column-gap: 5vh;
 }
@@ -390,8 +395,8 @@ footer {
 
 button {
   background-color: black;
-  width: 60%;
-  height: 30%;
+  width: 20vh;
+  height: 5vh;
 }
 .contact button > a {
   color: ghostwhite;
@@ -438,7 +443,7 @@ button {
 } */
 
 .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: -50px;
+  bottom: -100px;
   left: 0;
   width: 100%;
 }
@@ -500,6 +505,7 @@ button {
     align-items: center;
     column-gap: 3vh;
   }
+  
 
   .about img {
     width: 25vh;
@@ -507,13 +513,10 @@ button {
   }
 
   /* skill */
-.skill > article {
-  row-gap: 3vh;
-}
+
 
  .skill aside {
-  width: 80%;
-  column-gap: 12vh;
+  column-gap: 10vh;
  } 
 
  .skill img {
@@ -526,10 +529,6 @@ button {
 }
 
 /* education */
-
-.education {
-  padding-left: 8vh;
-}
 
 .education li {
   font-size: 15px;
@@ -685,9 +684,17 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 10vh;
-    padding: 10vh 20vh 10vh 20vh;
+    /* column-gap: 10vh; */
   }
+  
+  .about-wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  
   
   .about img {
     width: 45vh;
@@ -704,8 +711,8 @@ p {
     height: 68vh;
   }
 
-  .skill > article {
-    row-gap: 5vh;
+  .skill-wrapper{
+    width: 70%;
   }
 
   .skill figure {
@@ -722,9 +729,16 @@ p {
   }
 
   /* education */
-
+  .education-wrapper{
+    width: 70%;
+    
+  }
   .education {
-    padding-left: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-left: 30vh; */
   }
   .education li {
     font-size: 17px;
@@ -741,6 +755,7 @@ p {
     padding-top: 15vh;
     width:80%;
     row-gap: 10vh;
+    padding-bottom: 10vh;
   }
   .work img {
     width: 100%;
@@ -764,27 +779,29 @@ p {
   } */
 
   /* service */
-  .service {
-    height: 65vh;
-}
 
-  .service > article {
-    height: 65vh;
-    row-gap: 8vh;
+  
+
+  .service-wrapper {
+    display: flex;
+    width: 70%;
+    column-gap: 5vh;
   }
 
-  .service section {
+  .service-wrapper section{
     display: flex;
-    width: 85%;
+    justify-content: space-between;
     column-gap: 5vh;
   }
   
   .service aside {
-    width: 50%;
+    width: 40%;
   }
 
   /* contact */
-  
+  .contact-wrapper aside{
+    column-gap: 10vh;
+  }
   .contact a:hover {
     color: ghostwhite;
   }
