@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portofolio</title>
   </head>
@@ -93,14 +94,6 @@
               <img src="./img/java-script-logo.jpg" alt="JavaScript" />
               <figcaption>JavaScript</figcaption>
             </figure>
-            <!-- <figure>
-            <img src="./img/vuejs.png" alt="Vuejs">
-            <figcaption>Vue.js</figcaption>
-          </figure>
-          <figure>
-            <img src="./img/reactjs.svg" alt="Reactjs">
-            <figcaption>React.js</figcaption>
-          </figure> -->
             <figure>
               <img src="./img/saas.png" alt="Saas" />
               <figcaption>Sass</figcaption>
@@ -135,78 +128,90 @@
         </section>
       </article>
       <article class="work" id="work">
-        <h2>Previous Work</h2>
-        <article class="text6">
-          <figure>
-            <a href="https://naoaoyama.github.io/restaurantwebsite/"
-              ><img
-                class="img-item"
-                src="./img/restaurant.png"
-                alt="liquorstore"
-            /></a>
-            <figcaption>
-              <a href="https://naoaoyama.github.io/restaurantwebsite/"
-                >2023. レストラン サンプルWEBサイト</a
-              >
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="http://artisan-cakeshop.site/"
-              ><img class="img-item" src="./img/cakeshop.png" alt="cakeshop"
-            /></a>
-            <figcaption>
-              <a href="https://naoaoyama.github.io/capston_project/"
-                >2023.ケーキショップ サンプルWEBサイト</a
-              >
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="https://naoaoyama.github.io/flowershopwebsite/index.html"
-              ><img
-                class="img-item"
-                src="./img/flowershop01.png"
-                alt="Flowershop"
-            /></a>
-            <figcaption>
-              <a href="https://naoaoyama.github.io/flowershopwebsite/index.html"
-                >2023. 花屋 サンプルWEBサイト</a
-              >
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="https://naoaoyama.github.io/Weddingsite/"
-              ><img class="img-item" src="./img/wedding.png" alt="weddingsite"
-            /></a>
-            <figcaption>
-              <a href="https://naoaoyama.github.io/Weddingsite/"
-                >2023. ウェディング サンプルWEBサイト</a
-              >
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="https://naoaoyama.github.io/Udonorganization/"
-              ><img class="img-item" src="./img/Udon.png" alt="sample"
-            /></a>
-            <figcaption>
-              <a href="https://naoaoyama.github.io/Udonorganization/"
-                >2023. 非営利団体 サンプルWEBサイト</a
-              >
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="http://tsunagu-connect.site/"
-              ><img
-                class="img-item"
-                src="./img/Tsunagu.png"
-                alt="corporate website"
-            /></a>
-            <figcaption>
-              <a href="https://naoaoyama.github.io/Tsunagu/"
-                >2023. コーポレートサイト</a
-              >
-            </figcaption>
-          </figure>
+        <article class="work-wrapper">
+          <h2>Previous Work</h2>
+            <section class="text6" id="slider">
+              <div class="swiper">
+                  <div class="swiper-wrapper">
+          
+                    <div class="swiper-slide">
+                      <a href="https://naoaoyama.github.io/restaurantwebsite/"
+                        ><img
+                          class="img-item"
+                          src="./img/restaurant.png"
+                          alt="liquorstore"
+                      /></a>
+                      <figcaption>
+                        <a href="https://naoaoyama.github.io/restaurantwebsite/"
+                          >2023. レストラン サンプルWEBサイト</a
+                        >
+                      </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="http://artisan-cakeshop.site/"
+                        ><img class="img-item" src="./img/cakeshop.png" alt="cakeshop"
+                      /></a>
+                      <figcaption>
+                        <a href="https://naoaoyama.github.io/capston_project/"
+                          >2023.ケーキショップ サンプルWEBサイト</a
+                        >
+                      </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="https://naoaoyama.github.io/flowershopwebsite/index.html"
+                        ><img
+                          class="img-item"
+                          src="./img/flowershop01.png"
+                          alt="Flowershop"
+                      /></a>
+                      <figcaption>
+                        <a href="https://naoaoyama.github.io/flowershopwebsite/index.html"
+                          >2023. 花屋 サンプルWEBサイト</a
+                        >
+                      </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="https://naoaoyama.github.io/Weddingsite/"
+                        ><img class="img-item" src="./img/wedding.png" alt="weddingsite"
+                      /></a>
+                      <figcaption>
+                        <a href="https://naoaoyama.github.io/Weddingsite/"
+                          >2023. ウェディング サンプルWEBサイト</a
+                        >
+                      </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="https://naoaoyama.github.io/Udonorganization/"
+                        ><img class="img-item" src="./img/Udon.png" alt="sample"
+                      /></a>
+                      <figcaption>
+                        <a href="https://naoaoyama.github.io/Udonorganization/"
+                          >2023. 非営利団体 サンプルWEBサイト</a
+                        >
+                      </figcaption>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="http://tsunagu-connect.site/"
+                        ><img
+                          class="img-item"
+                          src="./img/Tsunagu.png"
+                          alt="corporate website"
+                      /></a>
+                      <figcaption>
+                        <a href="https://naoaoyama.github.io/Tsunagu/"
+                          >2023. コーポレートサイト</a
+                        >
+                      </figcaption>
+                    </div>
+          
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper-pagination"></div>
         </article>
+        </section>
+
       </article>
       <article class="service" id="service">
         <article>
@@ -246,33 +251,7 @@
       </article>
     </main>
     <footer>&copy;Nao Aoyama</footer>
-    <script type="text/javascript">
-      ScrollReveal().reveal(".text3", {
-        duration: 2500,
-        origin: "left",
-        distance: "200px",
-        reset: true,
-      });
-
-      ScrollReveal().reveal(".text5", {
-        duration: 2000,
-        origin: "right",
-        distance: "230px",
-        reset: true,
-      });
-
-      ScrollReveal().reveal(".text4", {
-        duration: 2000,
-        origin: "right",
-        distance: "200px",
-        reset: true,
-      });
-      ScrollReveal().reveal(".text6", {
-        duration: 3000,
-        origin: "bottom",
-        distance: "200px",
-        reset: true,
-      });
-    </script>
+    <script src="./JS/swiper-bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
   </body>
 </html>
