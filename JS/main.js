@@ -25,7 +25,7 @@
         reset: true,
       });
 
-      {
+ {
   const swiper = new Swiper('.swiper', {
     loop:true,
     initialSlide: 0,

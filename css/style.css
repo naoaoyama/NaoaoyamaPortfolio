@@ -21,6 +21,8 @@ main {
 
 
 
+
+
 /* ########################## */
 /* mobileversion */
 /* ########################## */
@@ -44,6 +46,11 @@ p {
 nav > ul {
   display: none;
 }
+
+nav > ul  a {
+  font-family: 'Amiri', 'Noto Serif JP', serif;
+  
+}
 nav aside {
   display: flex;
   justify-content: space-between;
@@ -51,7 +58,7 @@ nav aside {
   align-items: center;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  column-gap: 3vh;
+  column-gap: 2.5vh;
   
 }
 
@@ -72,6 +79,7 @@ details ul {
 details li {
   display: flex;
   padding-right: 3%;
+  font-family: 'Amiri', 'Noto Serif JP', serif;
 }
 details a {
   color: white;
@@ -106,6 +114,8 @@ nav a {
 
 nav > aside a {
   font-size: 15px;
+  font-family: 'Amiri', 'Noto Serif JP', serif;
+
 }
 
 /* header */
@@ -142,6 +152,8 @@ header > h1{
   font-size: 30px;
   font-weight: 100;
   color: ghostwhite;
+  font-family: 'Amiri', 'Noto Serif JP', serif;
+  letter-spacing: 5px;
 }
 
 /* footer */
@@ -150,6 +162,8 @@ footer {
   padding: 4%;
   text-align: center;
   color: lightslategray;
+  font-family: 'Amiri', 'Noto Serif JP', serif;
+
 }
 
 
@@ -259,15 +273,17 @@ footer {
   padding-bottom: 10vh;
 }
 
-.education > section {
+.education section {
   display: flex;
   flex-direction: column;
-  row-gap: 2vh;
+  row-gap: 3vh;
 }
+
 
 .education li {
   list-style: none;
   font-size: 12px;
+  line-height: 3vh;
 }
 
 
@@ -299,6 +315,11 @@ footer {
 .work figcaption > a:hover {
   color: ghostwhite;
 } 
+
+.bannerImg img {
+  width: 55vh;
+  height: 10vh;
+}
 
 /* service */
 /* .service {
@@ -627,7 +648,7 @@ button {
   }
 
 p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   /* nav */
