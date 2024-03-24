@@ -219,7 +219,6 @@ footer {
   flex-wrap: wrap;
   row-gap: 3vh;
   column-gap: 3vh;
-  justify-content: center;
 }
 
 .skill figure {
@@ -227,6 +226,7 @@ footer {
   flex-direction: column;
   row-gap: 2vh;
   align-items: center;
+  width: 20%;
 }
 
 .skill img {
@@ -466,9 +466,9 @@ button {
 
   /* skill */
 
- .skill aside {
-  column-gap: 8vh;
- } 
+  .skill-wrapper aside{
+    justify-content: center;
+  }
 
  .skill img {
   width: 8vh;
@@ -496,7 +496,7 @@ button {
 /* service */
 .service {
   height:53vh;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
 }
 
 .service > article {
@@ -606,7 +606,7 @@ p {
   }
   
   .about-wrapper{
-    width: 70%;
+    max-width:70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -618,7 +618,7 @@ p {
     width: 45vh;
     height: 50vh;
     border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+    border-top-right-radius: 50%;
   }
   .about aside {
     width: 50%;
@@ -639,10 +639,10 @@ p {
     max-width: 70%;
   }
 
-  .skill figure {
-    width: 20%;
+  .skill-wrapper aside{
+    column-gap: 8vh;
   }
-  
+
   .skill img {
     width: 12vh;
     height: 12vh;
