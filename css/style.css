@@ -111,12 +111,12 @@ nav a {
   text-decoration: none;
   color: black;
   transition: .4s;
-  font-size: 10px;
+  font-size: 15px;
   letter-spacing: 2px;
 }
 
 nav > aside a {
-  font-size: 15px;
+  font-size: 20px;
   font-family: 'Amiri', 'Noto Serif JP', serif;
 
 }
@@ -444,7 +444,7 @@ button {
   }
 
   nav > aside a {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   header > h1{
