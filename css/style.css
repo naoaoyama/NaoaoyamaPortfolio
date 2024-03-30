@@ -680,7 +680,7 @@ p {
     align-items: center;
   }
   #work-items{
-    /* width:70%; */
+    max-width:100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

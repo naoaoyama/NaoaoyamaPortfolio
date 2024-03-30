@@ -1,12 +1,12 @@
       ScrollReveal().reveal(".text3", {
-        duration: 2500,
+        duration: 3000,
         origin: "left",
-        distance: "200px",
+        distance: "230px",
         reset: true,
       });
 
       ScrollReveal().reveal(".text5", {
-        duration: 2000,
+        duration: 3000,
         origin: "right",
         distance: "230px",
         reset: true,
